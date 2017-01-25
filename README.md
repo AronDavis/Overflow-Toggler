@@ -1,3 +1,5 @@
+[View the project page here for a working example.](https://arondavis.github.io/Overflow-Toggler/)
+
 To set up Overflow Toggler, you'll need to include JQuery, OverflowToggler.js, and OverflowToggler.css.
 
 Create a DOM element with the class "overflowToggler" and a max-height set (via class or direct property).
