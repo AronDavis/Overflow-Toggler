@@ -5,15 +5,15 @@ $(function() {
 		if (hasVerticalOverflow(item))
 		{
 			$(item).addClass("content");
-			var container = $("<div>").addClass("overflowToggler").addClass("container");
+			var container = $("<div>").addClass("overflowToggler container");
 			
 			$(item).before(container);
 			container.append(item);
 			
-			var toggle = $("<div>").addClass("overflowToggler").addClass("toggler").addClass("closed");
-			var toggleIcon = $("<div>").text("...").addClass("overflowToggler").addClass("toggleIcon");
+			var toggle = $("<div>").addClass("overflowToggler toggler").addClass("closed");
+			var toggleIcon = $("<div>").text("...").addClass("overflowToggler toggleIcon");
 
-			$(item).parent().append($("<div>").addClass("overflowToggler").addClass("contentSpacer"));
+			$(item).parent().append($("<div>").addClass("overflowToggler contentSpacer"));
 
 			toggle.append(toggleIcon);
 			$(item).parent().append(toggle);
