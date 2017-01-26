@@ -26,7 +26,8 @@ $(function() {
 			});
 		}
         });
-});		
+});
+
 function hasVerticalOverflow(element)
 {
 	return element.scrollHeight > element.clientHeight;
