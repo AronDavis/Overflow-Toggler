@@ -1,6 +1,5 @@
 $(function() 
 {
-
 	$.each($('.overflowToggler'), function (index, item)
 	{
 		overflowTogglerInitialize($(item));
