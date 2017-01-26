@@ -9,7 +9,19 @@ $(function()
 	{
 		overflowToggler: function() 
 		{
-			overflowTogglerInitialize(this);
+			if(this == null)
+				return;
+			
+			if(this.length == 1)
+				overflowTogglerInitialize(this);
+			else
+			{
+				var length = this.length;
+				for(var i = 0; i < length; i++)
+				{
+					overflowTogglerInitialize($(this[i]));
+				}
+			}
 		}
 	});
 });
