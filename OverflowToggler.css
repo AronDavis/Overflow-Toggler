@@ -1,4 +1,4 @@
-.overflowToggler.container
+.overflowToggler-container
 {
     position: relative;
     padding-top: 5px;
@@ -6,29 +6,29 @@
     word-break: break-word;
 }
 
-.overflowToggler.container.open
+.overflowToggler-container.open
 {
     max-height: none;
 }
 
-.overflowToggler.container.open .content
+.overflowToggler-container.open .overflowToggler-content
 {
     max-height: none !important;
     overflow: initial;
-    padding-bottom: 12px; /*should match the height of .jiraListItemContentToggler*/
+    padding-bottom: 12px; /*should match the height of .toggler*/
 }
 
-.overflowToggler.content
+.overflowToggler-content
 {
     overflow: hidden;
 }
 
-.contentSpacer, .toggler
+.overflowToggler-contentSpacer, .overflowToggler-toggler
 {
     height: 12px;
 }
 
-.toggler
+.overflowToggler-toggler
 {
     position: absolute;
     width: calc(100% - 5px);
@@ -42,17 +42,17 @@
     justify-content: center;
 }
 
-.toggler:hover
+.overflowToggler-toggler:hover
 {
     background-color: #e0e0e0;
 }
 
-.toggler:active
+.overflowToggler-toggler:active
 {
     background-color: #d0d0d0;
 }
 
-.toggler.open .toggleIcon
+.overflowToggler-toggler.open .overflowToggler-toggleIcon
 {
     width: 0; 
     height: 0; 
@@ -62,7 +62,7 @@
     overflow: hidden;
 }
 
-.toggler.closed .toggleIcon
+.overflowToggler-toggler.closed .overflowToggler-toggleIcon
 {
     margin-bottom: 8px;
 }
