@@ -21,22 +21,8 @@ $(function() {
 
 			toggle.click(function ()
 			{
-				if ($(this).hasClass("closed"))
-				{
-					$(this).removeClass("closed");
-					$(this).addClass("open");
-
-					$(this).parent().removeClass("closed");
-					$(this).parent().addClass("open");
-				}
-				else if ($(this).hasClass("open"))
-				{
-					$(this).removeClass("open");
-					$(this).addClass("closed");
-
-					$(this).parent().removeClass("open");
-					$(this).parent().addClass("closed");
-				}
+				$(this).toggleClass("open closed");
+				$(this).parent().toggleClass("open closed");
 			});
 		}
         });
